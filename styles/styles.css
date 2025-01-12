@@ -1,11 +1,9 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -15,7 +13,6 @@ body {
     padding: 0;
 }
 
-/* Header and Navigation */
 header {
     background-color: #333;
     color: #fff;
@@ -34,7 +31,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Content */
 main {
     padding: 2rem;
     text-align: center;
@@ -45,7 +41,6 @@ main img {
     margin-top: 1rem;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: #fff;
