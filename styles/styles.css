@@ -36,8 +36,26 @@ main {
 }
 
 main img {
-    border-radius: 50%;
+    border-radius: 50%; /* Specific to main img */
     margin-top: 1rem;
+}
+
+aside {
+    width: 300px; /* Sets the width of the aside */
+    margin: 20px; /* Adds margin around the aside */
+    border: 2px solid #ccc; /* Adds a border to the aside */
+    padding: 15px; /* Adds padding inside the aside */
+    background-color: #f9f9f9; /* Sets the background color */
+    color: #333; /* Sets the text color */
+}
+
+aside img {
+    width: 200px; /* Sets the image width */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+p {
+    padding: 0; /* Ensures no padding for paragraph elements */
 }
 
 footer {
