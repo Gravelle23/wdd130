@@ -46,57 +46,33 @@ nav a {
 
 /* Main Hero Section */
 .hero {
-    color: var(--accent1-color);
     padding: 60px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.hero h1 {
-    font-family: 'Montserrat', serif;
-    font-size: 3em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensure h1 is on top */
-    margin: 0;
-}
-
-/* Hero Background Image */
 .hero img.hero-image {
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Hero image stays in the background */
-    object-fit: cover; /* Ensure it covers the div */
-    max-height: 100vh; /* Prevent it from overflowing */
+    object-fit: cover;
+    max-height: 100vh;
 }
 
-/* Article Section for Happy Client Image */
 .hero article {
-    position: relative; /* Remove absolute positioning */
-    z-index: 1;
-    margin-top: 80vh; /* Space it below the hero image */
+    position: relative;
+    margin-top: 30px; /* Space below the hero image */
     padding: 20px;
     text-align: left;
+    z-index: 1;
 }
 
 .hero article img {
-    width: 150px; /* Set a fixed width for the client image */
+    width: 150px;
     height: auto;
-    float: left; /* Float the image to the left */
-    margin-right: 20px; /* Space between the image and text */
-    border-radius: 50%; /* Optional: to make the client image circular */
-}
-
-/* Ensure paragraph text wraps around the client image */
-.hero article p {
-    font-size: 1.1em;
-    line-height: 1.6;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
 }
 
 /* Section Styling */
