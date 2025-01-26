@@ -55,6 +55,15 @@ nav a {
     overflow: hidden;
 }
 
+.hero {
+    background-color: transparent; /* Make the hero section background transparent */
+    color: var(--accent1-color);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow occurs */
+}
+
 .hero h1 {
     font-family: 'Montserrat', serif;
     font-size: 3em;
@@ -76,15 +85,22 @@ nav a {
     padding: 10px;
 }
 
-.hero img {
+.hero img.hero-image {
     width: 100%;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    object-fit: cover;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
     max-height: 100vh;
+}
+
+.hero article img {
+    max-width: 100%; /* Ensure the image in the article doesn’t stretch */
+    height: auto;
+    float: right; /* Float the image to the right */
+    margin-left: 20px;
 }
 
 /* Section Styling */
