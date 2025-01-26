@@ -8,7 +8,7 @@
 
 /* General Styles */
 body {
-    font-family: 'Nunito Sans', sans-serif; /* Body font */
+    font-family: 'Nunito Sans', sans-serif;
     background-color: var(--primary-color);
     color: var(--accent1-color);
     margin: 0;
@@ -51,120 +51,60 @@ nav a {
     color: var(--accent1-color);
     padding: 60px 20px;
     text-align: center;
-    position: relative; /* Make the hero div relative */
-    overflow: hidden; /* Prevent overflow and overlap */
+    position: relative;
+    overflow: hidden;
 }
 
 .hero h1 {
     font-family: 'Montserrat', serif;
     font-size: 3em;
-    position: absolute; /* Position the h1 absolutely */
-    top: 50%; /* Adjusts the h1's vertical position */
-    left: 50%; /* Adjusts the h1's horizontal position */
-    transform: translate(-50%, -50%); /* Center the h1 element */
-    z-index: 2; /* Ensures the h1 is on top of the hero image */
-    margin: 0; /* Remove any default margins */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
 }
 
 .hero article {
-    position: absolute; /* Position the article element absolutely */
-    top: 70%; /* Adjust the vertical position of the article */
-    left: 50%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center the article */
-    z-index: 1; /* Ensure the article appears below the h1 */
-    max-width: 80%; /* Limit the width to avoid it stretching too far */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    max-width: 80%;
     padding: 10px;
 }
 
 .hero img {
-    width: 100%; /* Make sure the image covers the entire hero section */
-    height: auto;
-    position: absolute; /* Make the image fit behind other elements */
-    top: 0;
-    left: 0;
-    z-index: 0; /* Ensure the image is the background */
-    object-fit: cover; /* Ensures the image is cropped to cover the hero div */
-    max-height: 100vh; /* Ensure the image doesn't overflow vertically */
-}
-
-/* Overview Section */
-.overview {
-    display: flex;
-    align-items: center;
-    padding: 40px 20px;
-}
-
-.overview img {
-    width: 100%; /* Ensure the image takes up the full width */
-    max-width: 500px; /* Set a max-width to avoid stretching */
-    height: auto;
-    margin-right: 20px;
-}
-
-.overview h2 {
-    font-family: 'Montserrat', serif;
-    font-size: 2em;
-    color: var(--accent2-color);
-}
-
-.overview p {
-    font-size: 1.1em;
-}
-
-/* Team Section */
-.team {
-    padding: 40px 20px;
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-}
-
-.team h2 {
-    font-family: 'Montserrat', serif;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.team-member {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 10px;
-}
-
-.team-member img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Control the size of the images */
-    border-radius: 50%;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+    max-height: 100vh;
 }
 
-.team-member h3 {
-    font-family: 'Montserrat', serif;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-.team-member p {
-    font-size: 1.1em;
-}
-
-/* Values Section */
-.values {
+/* Section Styling */
+.history, .adventure {
     padding: 40px 20px;
 }
 
-.values h2 {
+.history h2, .adventure h2 {
     font-family: 'Montserrat', serif;
     font-size: 2.5em;
     color: var(--accent2-color);
 }
 
-.values p {
-    font-size: 1.2em;
+.adventure-images img {
+    width: 100%;
+    max-width: 20%;
+    margin: 0 5px;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     background-color: var(--secondary-color);
     text-align: center;
@@ -174,6 +114,17 @@ footer {
 
 footer p {
     font-size: 1em;
+}
+
+/* Social Media Links */
+nav.sociallinks a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav.sociallinks img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Link Styling */
@@ -187,31 +138,16 @@ a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .overview {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .overview img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .team-member {
-        width: 100%;
-        margin: 20px 0;
+    .adventure-images img {
+        max-width: 100%;
+        margin-bottom: 10px;
     }
 
     .hero h1 {
-        font-size: 2em; /* Make the hero title smaller on mobile */
+        font-size: 2em;
     }
 
     .hero article {
-        top: 75%; /* Adjust article position for smaller screens */
-    }
-
-    .team .team-member img {
-        max-width: 150px; /* Smaller team images on mobile */
+        top: 75%;
     }
 }
