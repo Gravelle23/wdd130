@@ -55,15 +55,15 @@ nav a {
     overflow: hidden; /* Prevent overflow and overlap */
 }
 
-.hero h1 {
-    font-family: 'Montserrat', serif;
-    font-size: 3em;
-    position: absolute; /* Position the h1 absolutely */
-    top: 50%; /* Adjusts the h1's vertical position */
-    left: 50%; /* Adjusts the h1's horizontal position */
-    transform: translate(-50%, -50%); /* Center the h1 element */
-    z-index: 2; /* Ensures the h1 is on top of the hero image */
-    margin: 0; /* Remove any default margins */
+.hero img {
+    width: 100%; /* Make sure the image covers the entire hero section */
+    height: auto;
+    position: absolute; /* Make the image fit behind other elements */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Ensure the image is the background */
+    object-fit: cover; /* Ensures the image is cropped to cover the hero div */
+    max-height: 100vh; /* Ensure the image doesn't overflow vertically */
 }
 
 .hero article {
