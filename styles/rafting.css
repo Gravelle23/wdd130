@@ -1,0 +1,161 @@
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #2A1A1F;
+    --accent1-color: #B7B6C1;
+    --accent2-color: #5A6650;
+}
+
+/* General Styles */
+body {
+    font-family: 'Nunito Sans', sans-serif; /* Body font */
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+}
+
+header .logo {
+    font-family: 'Montserrat', serif;
+    font-size: 1.8em;
+    color: var(--accent1-color);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+/* Main Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Overview Section */
+.overview {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.overview img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.overview h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2em;
+    color: var(--accent2-color);
+}
+
+.overview p {
+    font-size: 1.1em;
+}
+
+/* Team Section */
+.team {
+    padding: 40px 20px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.team h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+}
+
+/* Values Section */
+.values {
+    padding: 40px 20px;
+}
+
+.values h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2.5em;
+    color: var(--accent2-color);
+}
+
+.values p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--accent1-color);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Link Styling */
+a {
+    color: var(--accent1-color);
+}
+
+a:hover {
+    color: var(--accent2-color);
+}
