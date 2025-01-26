@@ -45,26 +45,10 @@ nav a {
 }
 
 /* Main Hero Section */
-.hero-header {
-    position: absolute;
-    top: 20%; /* Adjust the top position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3em; /* Adjust the size to fit your design */
-    color: white;
-    font-family: 'Montserrat', serif;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
-    z-index: 2; /* Ensure it's above the hero image */
-    text-align: center;
-    width: 100%; /* Make sure the text stays centered */
-}
-
-/* Ensure the hero image and text are layered correctly */
 .hero {
-    position: relative;
     padding: 60px 20px;
     text-align: center;
+    position: relative;
 }
 
 .hero img.hero-image {
