@@ -3,73 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Whitewater Rafting</title>
-
     <meta name="description" content="Learn about Whitewater Rafting Adventures, our mission, and meet our passionate team. We're dedicated to providing safe and exciting rafting experiences for all adventure seekers.">
     <meta name="author" content="Aaron Gravelle">
-    
+    <title>About Us - Whitewater Rafting</title>
+
+    <!-- Google Fonts Preconnect Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
-</head>
 
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to External CSS (Make sure the file is named rafting.css and is in the styles folder) -->
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-<header>
-    <img src="images/logo.jpg" alt="Whitewater Rafting Logo" class="logo">
+    <header>
+        <div class="logo">Whitewater Rafting</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-        <main>
-            <div class="hero">
-                <img src="images/hero-image.jpg" alt="Rafting Adventure" class="hero-image">
-                <h1>Whitewater Rafting Adventures</h1>
-                <article>
-                    <img src="images/happy-client.jpg" alt="Happy Client">
-                    <p>We offer thrilling rafting adventures for all skill levels. Join us for the ride of your life!</p>
-                </article>
-            </div>
-
-            <section>
-            <h2>History</h2>
-            <p>Founded in 1998, Whitewater Rafting Adventures has been providing adrenaline-packed rafting experiences for over two decades.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>About Us</h1>
+            <p>Discover the passion and expertise behind Whitewater Rafting Adventures.</p>
         </section>
 
-            <section>
-                <h2>Adventure Awaits You!</h2>
-                <div class="rafting-images">
-                    <img src="images/rafting1.jpg" alt="Rafting in Action">
-                    <img src="images/rafting2.jpg" alt="Rafting on Rapids">
-                    <img src="images/rafting3.jpg" alt="Group Rafting">
-                    <img src="images/rafting4.jpg" alt="Rafters Navigating Rapids">
-                    <img src="images/rafting5.jpg" alt="Scenic Rafting View">
-                </div>
-            </section>
-        </main>
+        <!-- Overview Section -->
+        <section class="overview">
+            <img src="heroimage.jpg" alt="Rafting Adventures">
+            <div>
+                <h2>Our Mission</h2>
+                <p>We aim to provide unforgettable and safe rafting experiences while preserving the natural beauty of our rivers.</p>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2025 Whitewater Rafting Adventures | Designed by Your Name</p>
-            <nav class="sociallinks">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.svg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com">
-                    <img src="images/twitter.svg" alt="Twitter">
-                </a>
-                <a href="https://instagram.com">
-                    <img src="images/instagram.svg" alt="Instagram">
-                </a>
-            </nav>
+        <!-- Meet the Team Section -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Lead Guide</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Owner</p>
+            </div>
+        </section>
+
+        <!-- Safety and Values Section -->
+        <section class="values">
+            <h2>Safety & Values</h2>
+            <p><strong>Safety:</strong> Top-notch equipment and experienced guides ensure your safety.</p>
+            <p><strong>Environment:</strong> Dedicated to protecting our rivers and wildlife.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: info@whitewaterrafting.com | Follow us on social media</p>
+        <p>&copy; 2025 Whitewater Rafting Adventures</p>
+
+        <!-- Social Media Links -->
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
     </footer>
-
 </body>
 </html>
