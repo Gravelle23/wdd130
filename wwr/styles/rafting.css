@@ -8,7 +8,7 @@
 
 /* General Styles */
 body {
-    font-family: 'Nunito Sans', sans-serif; 
+    font-family: 'Nunito Sans', sans-serif; /* Body font */
     background-color: var(--primary-color);
     color: var(--accent1-color);
     margin: 0;
@@ -24,10 +24,8 @@ header {
     background-color: var(--secondary-color);
 }
 
-header .logo {
-    font-family: 'Montserrat', serif;
-    font-size: 1.8em;
-    color: var(--accent1-color);
+header .logo img {
+    max-height: 50px;
 }
 
 nav ul {
@@ -53,37 +51,37 @@ nav a {
     color: var(--accent1-color);
     padding: 60px 20px;
     text-align: center;
-    position: relative; 
+    position: relative; /* Make the hero div relative */
 }
 
 .hero h1 {
     font-family: 'Montserrat', serif;
     font-size: 3em;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 2; 
+    position: absolute; /* Position the h1 absolutely */
+    top: 50%; /* Adjusts the h1's vertical position */
+    left: 50%; /* Adjusts the h1's horizontal position */
+    transform: translate(-50%, -50%); /* Center the h1 element */
+    z-index: 2; /* Ensures the h1 is on top of the hero image */
 }
 
 .hero article {
-    position: absolute; 
-    top: 70%; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    z-index: 1; 
+    position: absolute; /* Position the article element absolutely */
+    top: 70%; /* Adjust the vertical position of the article */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translateX(-50%); /* Center the article */
+    z-index: 1; /* Ensure the article appears below the h1 */
 }
 
 .hero img {
-    width: 100%; 
+    width: 100%; /* Make sure the image covers the entire hero section */
     height: auto;
-    position: absolute; 
+    position: absolute; /* Make the image fit behind other elements */
     top: 0;
     left: 0;
-    z-index: 0; 
+    z-index: 0; /* Ensure the image is the background */
 }
 
-
+/* Overview Section */
 .overview {
     display: flex;
     align-items: center;
