@@ -8,7 +8,7 @@
 
 /* General Styles */
 body {
-    font-family: 'Nunito Sans', sans-serif; /* Body font */
+    font-family: 'Nunito Sans', sans-serif; 
     background-color: var(--primary-color);
     color: var(--accent1-color);
     margin: 0;
@@ -53,18 +53,37 @@ nav a {
     color: var(--accent1-color);
     padding: 60px 20px;
     text-align: center;
+    position: relative; 
 }
 
 .hero h1 {
     font-family: 'Montserrat', serif;
     font-size: 3em;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
 }
 
-.hero p {
-    font-size: 1.2em;
+.hero article {
+    position: absolute; 
+    top: 70%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
 }
 
-/* Overview Section */
+.hero img {
+    width: 100%; 
+    height: auto;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 0; 
+}
+
+
 .overview {
     display: flex;
     align-items: center;
