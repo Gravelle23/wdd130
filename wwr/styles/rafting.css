@@ -89,21 +89,20 @@ nav a {
 
 /* Article Section for Happy Client Image */
 .hero article {
-    position: absolute;
-    top: 70%; /* Adjust position for the article */
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative; /* Adjusted from absolute to avoid overlap */
     z-index: 1; /* Keep article below h1 */
     max-width: 80%;
-    padding: 10px;
+    margin: 0 auto; /* Center the article */
+    padding: 20px;
     text-align: left; /* Align text to the left for better layout */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a slight background for better contrast */
 }
 
 .hero article img {
     width: 150px; /* Set a fixed width for the client image */
     height: auto;
-    float: right; /* Float the image to the right */
-    margin-left: 20px; /* Space between the image and text */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Space between the image and text */
     border-radius: 50%; /* Optional: to make the client image circular */
 }
 
