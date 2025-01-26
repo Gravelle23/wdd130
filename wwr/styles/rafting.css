@@ -46,9 +46,10 @@ nav a {
 
 /* Main Hero Section */
 .hero {
-    padding: 0; /* Remove extra padding if not needed */
-    position: relative; /* Ensure relative positioning for layering */
+    padding: 60px 20px;
     text-align: center;
+    position: relative;
+    
 }
 
 .hero img.hero-image {
@@ -56,52 +57,27 @@ nav a {
     height: auto;
     object-fit: cover;
     max-height: 100vh;
-    display: block;
-    z-index: 1; /* Ensure the hero image is behind */
 }
 
 .hero article {
-    position: absolute; /* Position the article relative to the hero section */
-    bottom: 20px; /* Adjust as necessary */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6); /* Add a background for readability */
-    color: var(--accent1-color);
+    position: relative;
+    margin-top: 40vh; /* Adjust to ensure space below the hero image */
     padding: 20px;
-    border-radius: 10px;
     text-align: left;
-    z-index: 2; /* Ensure article is above the image */
+    z-index: 1;
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero article img {
     width: 150px;
-    height: 150px;
-    float: none; /* Remove floating */
-    margin: 0 auto 20px; /* Center the image inside the article */
-    display: block;
+    height: auto;
+    float: left;
+    margin-right: 20px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
-.hero article p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* Adjust responsive design */
-@media (max-width: 768px) {
-    .hero article {
-        bottom: 10px; /* Adjust positioning for smaller screens */
-        padding: 15px;
-    }
-
-    .hero article img {
-        width: 100px;
-        height: 100px;
-    }
-}
 .hero article p {
     font-size: 1.1em;
     line-height: 1.6;
@@ -171,4 +147,3 @@ a:hover {
         top: 75%;
     }
 }
-
