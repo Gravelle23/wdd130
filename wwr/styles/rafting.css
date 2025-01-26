@@ -46,22 +46,10 @@ nav a {
 
 /* Main Hero Section */
 .hero {
-    position: relative;
     padding: 60px 20px;
     text-align: center;
+    position: relative;
     overflow: hidden;
-}
-
-.hero h1 {
-    font-family: 'Montserrat', serif;
-    font-size: 3em;
-    color: white; /* White color for the title */
-    position: absolute;
-    top: 20%; /* Adjust to position over the image */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    margin: 0;
 }
 
 .hero img.hero-image {
@@ -69,13 +57,11 @@ nav a {
     height: auto;
     object-fit: cover;
     max-height: 100vh;
-    z-index: 1; /* Ensure it stays in the background */
 }
 
-/* Article Section for Happy Client Image */
 .hero article {
     position: relative;
-    margin-top: 100px; /* Adjust to ensure space below the hero image */
+    margin-top: 40vh; /* Adjust to ensure space below the hero image */
     padding: 20px;
     text-align: left;
     z-index: 1;
@@ -85,14 +71,13 @@ nav a {
 }
 
 .hero article img {
-    width: 150px; /* Fixed width for client image */
+    width: 150px;
     height: auto;
-    float: left; /* Float the image to the left */
+    float: left;
     margin-right: 20px;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%;
 }
 
-/* Ensure paragraph text wraps around the client image */
 .hero article p {
     font-size: 1.1em;
     line-height: 1.6;
