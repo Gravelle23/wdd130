@@ -56,12 +56,12 @@ nav a {
 }
 
 .hero {
-    background-color: transparent; /* Make the hero section background transparent */
+    background-color: transparent; /* Transparent background */
     color: var(--accent1-color);
     padding: 60px 20px;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Ensure no overflow occurs */
+    overflow: hidden;
 }
 
 .hero h1 {
@@ -71,36 +71,46 @@ nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 2; /* Ensure h1 is on top */
     margin: 0;
 }
 
-.hero article {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    max-width: 80%;
-    padding: 10px;
-}
-
+/* Hero Background Image */
 .hero img.hero-image {
     width: 100%;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
-    object-fit: cover; /* Ensure the image covers the area without stretching */
-    max-height: 100vh;
+    z-index: 0; /* Hero image stays in the background */
+    object-fit: cover; /* Ensure it covers the div */
+    max-height: 100vh; /* Prevent it from overflowing */
+}
+
+/* Article Section for Happy Client Image */
+.hero article {
+    position: absolute;
+    top: 70%; /* Adjust position for the article */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Keep article below h1 */
+    max-width: 80%;
+    padding: 10px;
+    text-align: left; /* Align text to the left for better layout */
 }
 
 .hero article img {
-    max-width: 100%; /* Ensure the image in the article doesn’t stretch */
+    width: 150px; /* Set a fixed width for the client image */
     height: auto;
     float: right; /* Float the image to the right */
-    margin-left: 20px;
+    margin-left: 20px; /* Space between the image and text */
+    border-radius: 50%; /* Optional: to make the client image circular */
+}
+
+/* Ensure paragraph text wraps around the client image */
+.hero article p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 /* Section Styling */
