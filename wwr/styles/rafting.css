@@ -61,10 +61,13 @@ nav a {
 
 .hero article {
     position: relative;
-    margin-top: 30px; /* Space below the hero image */
+    margin-top: 40vh; /* Adjust to ensure space below the hero image */
     padding: 20px;
     text-align: left;
     z-index: 1;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero article img {
@@ -73,6 +76,11 @@ nav a {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
+}
+
+.hero article p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 /* Section Styling */
