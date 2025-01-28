@@ -63,27 +63,26 @@ nav a {
 
 .hero-heading {
     position: absolute;
-    top: 50%;
+    top: 10%; /* Adjusts the heading's vertical position */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     color: white; /* Ensure contrast with the image */
     font-size: 3em;
     font-family: 'Montserrat', serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Improves readability */
     z-index: 2;
     text-align: center;
+    white-space: nowrap;
 }
 
-/* Article Section */
 .hero article {
     position: relative;
-    margin-top: 40vh; /* Adjust to ensure space below the hero image */
+    z-index: 2;
     padding: 20px;
-    text-align: left;
-    z-index: 1;
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 40vh; /* Space below the hero image */
+    text-align: left;
 }
 
 .hero article img {
@@ -157,7 +156,7 @@ a:hover {
 
     .hero-heading {
         font-size: 2em;
-        top: 40%;
+        top: 5%; /* Adjust position for smaller screens */
     }
 
     .hero article {
