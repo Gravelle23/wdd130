@@ -159,11 +159,18 @@ nav a:hover{
 /* Footer Styling */
 footer {
     background-color: var(--secondary-color);
+    display: flex; 
+    justify-content: space-between;
     text-align: center;
     padding: 20px 0;
     color: var(--accent1-color);
-    display: flex;
+
+}
+
+nav.sociallinks {
+    display: flex; /* Apply Flexbox only to the social links container */
     justify-content: flex-end;
+    margin-top: 10px;
 }
 
 footer p {
