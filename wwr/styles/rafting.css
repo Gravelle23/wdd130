@@ -16,7 +16,7 @@ body {
 
 /* Header Styling */
 header {
-    display: grid;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -24,12 +24,20 @@ header {
 
 }
 
+header .logo{
+    margin-left: 100px;
+}
+
 header .logo img {
-    max-height: 50px;
+    max-height: 150px;
 }
 
 nav {
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    padding:5px 20px;
+    border: 3px solid var(--accent2-color);
+    border-radius:25px;
 }
 
 nav ul {
@@ -37,22 +45,27 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
 
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--accent1-color);
     font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px
 
 }
 
 nav a:hover{
     color:var(--accent2-color);
+    color: #fff;
+    border-radius: 5px;
 }
 
 /* Hero Section */
