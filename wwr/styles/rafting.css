@@ -170,7 +170,7 @@ footer {
 nav.sociallinks {
     display: flex; /* Apply Flexbox only to the social links container */
     justify-content: flex-end;
-    margin-top: 10px;
+    
 }
 
 footer p {
