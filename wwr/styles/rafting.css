@@ -16,8 +16,8 @@ body {
 
 /* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr auto;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--secondary-color);
@@ -25,7 +25,7 @@ header {
 }
 
 header .logo{
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 header .logo img {
@@ -58,7 +58,7 @@ nav a {
     color: var(--accent1-color);
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 15px
+    padding: 10px 15px;
 
 }
 
