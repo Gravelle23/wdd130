@@ -71,7 +71,7 @@ nav a:hover{
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Full viewport height for the hero section */
+    height: 100vh; 
     overflow: hidden;
 }
 
@@ -83,6 +83,56 @@ nav a:hover{
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.testimonial-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Takes up the entire width of the hero image */
+    height: 100%; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.testimonial {
+    width: 80%; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 30px; 
+    border-radius: 10px; 
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.happy-client {
+    position: absolute;
+    top: 50%; 
+    right: 5%; 
+    transform: translateY(-50%); 
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.happy-client img {
+    max-height: 150px; 
+    border-radius: 50%; 
+}
+
+
+.testimonial p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 80%; 
 }
 
 .hero-heading {
@@ -170,7 +220,7 @@ footer {
 nav.sociallinks {
     display: flex; /* Apply Flexbox only to the social links container */
     justify-content: flex-end;
-    
+
 }
 
 footer p {
