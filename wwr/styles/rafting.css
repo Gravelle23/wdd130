@@ -24,15 +24,23 @@ body {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 150px 1fr auto;
-    align-items: center;
+    display: flex;
+    justify-content: space-between; /* Spaces out the logo, title, and nav */
+    align-items: center; /* Vertically aligns the items */
     padding: 10px 20px;
     background-color: var(--secondary-color);
 }
 
 header .logo {
-    margin-left: 20px;
+    margin-right: 20px; /* Adds space between the logo and title */
+}
+
+header h1 {
+    flex: 1; /* Makes the title take the remaining space */
+    text-align: center; /* Centers the title */
+    font-size: 2em; /* Adjust the size of the title */
+    color: var(--accent1-color);
+    margin: 0; /* Removes any default margin */
 }
 
 header .logo img {
