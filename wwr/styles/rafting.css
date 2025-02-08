@@ -5,15 +5,23 @@
     --accent2-color: #5A6650;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    margin: 0;
-    padding: 0;
 }
-
 
 header {
     display: grid;
@@ -21,23 +29,23 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--secondary-color);
-
 }
 
-header .logo{
+header .logo {
     margin-left: 20px;
 }
 
 header .logo img {
     max-height: 150px;
+    width: auto;
 }
 
 nav {
     margin-left: auto;
     margin-right: 20px;
-    padding:5px 20px;
+    padding: 5px 20px;
     border: 3px solid var(--accent2-color);
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 nav ul {
@@ -46,7 +54,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-
 }
 
 nav ul li {
@@ -59,19 +66,17 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 15px;
-
 }
 
-nav a:hover{
-    color:var(--accent2-color);
+nav a:hover {
+    color: var(--accent2-color);
     color: #fff;
     border-radius: 5px;
 }
 
-
 .hero {
     position: relative;
-    height: 100vh; 
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -89,8 +94,8 @@ nav a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,10 +103,10 @@ nav a:hover{
 }
 
 .testimonial {
-    width: 80%; 
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 30px; 
-    border-radius: 10px; 
+    width: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
     color: white;
     font-size: 1.2em;
     line-height: 1.6;
@@ -110,52 +115,50 @@ nav a:hover{
 
 .happy-client {
     position: absolute;
-    top: 50%; 
-    right: 5%; 
-    transform: translateY(-50%); 
-    z-index: 2; 
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; 
-    border-radius: 10px; 
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .happy-client img {
-    max-height: 150px; 
-    border-radius: 50%; 
+    max-height: 150px;
+    border-radius: 50%;
 }
-
 
 .testimonial p {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.6;
-    max-width: 80%; 
+    max-width: 80%;
 }
 
 .hero-heading {
     position: absolute;
-    top: 10%; 
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
-    color: white; 
+    color: white;
     font-size: 3em;
     font-family: 'Montserrat', serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     z-index: 2;
     text-align: center;
     white-space: nowrap;
 }
 
-
 .hero article {
     position: relative;
-    z-index: 0; 
+    z-index: 0;
     padding: 20px;
     max-width: 90%;
-    margin: 20px auto; 
+    margin: 20px auto;
     text-align: left;
 }
 
@@ -172,15 +175,12 @@ nav a:hover{
     line-height: 1.6;
 }
 
-
 .history, .adventure {
-
     padding: 40px 20px;
-    text-align:center;
+    text-align: center;
 }
 
 .history h2, .adventure h2 {
-
     font-family: 'Montserrat', serif;
     font-size: 2.5em;
     color: var(--accent2-color);
@@ -189,44 +189,39 @@ nav a:hover{
 
 .adventure-images {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
     justify-items: center;
 }
 
-.adventure-images figure{
-    margin:0;
+.adventure-images figure {
+    margin: 0;
 }
 
 .adventure-images img {
-    width:100%;
+    width: 100%;
     height: auto;
     max-width: 250px;
-    border-radius:8px;
-    
+    border-radius: 8px;
 }
-
 
 footer {
     background-color: var(--secondary-color);
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     text-align: center;
     padding: 20px 0;
     color: var(--accent1-color);
-
 }
 
 nav.sociallinks {
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
-
 }
 
 footer p {
     font-size: 1em;
 }
-
 
 nav.sociallinks a {
     text-decoration: none;
@@ -238,7 +233,6 @@ nav.sociallinks img {
     height: 30px;
 }
 
-
 a {
     color: var(--accent1-color);
 }
@@ -247,18 +241,91 @@ a:hover {
     color: var(--accent2-color);
 }
 
-
 @media (max-width: 768px) {
-    .adventure-images img {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .hero-heading {
         font-size: 2em;
-        top: 5%; 
+        top: 5%;
     }
 
     .hero article {
         margin-top: 60vh;
     }
+
+    .adventure-images {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0055a5;
+}
+
+.employee-profiles {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.employee-profiles .employee {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.employee-profiles .employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee-profiles .employee .caption {
+    font-weight: bold;
+    color: #003366;
+}
+
+.Map {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.Map iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+    
+    
