@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Whitewater Rafting Adventures! Find our contact details, ask questions, or book your next thrilling rafting adventure with us today.">
+    <meta name="description" content="Welcome to Whitewater Rafting Adventures. Explore thrilling rafting trips, expert guides, and unforgettable experiences.">
     <meta name="author" content="Aaron Gravelle">
-    <title>Contact Us | Whitewater Rafting Adventures - Get In Touch for Your Next Adventure</title>
+    <title>Home | Whitewater Rafting Adventures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -16,90 +16,53 @@
         <div class="logo">
             <img src="images/logo.jpg" alt="Whitewater Rafting Logo">
         </div>
-
-        <h1>Contact Us | Whitewater Rafting Adventures</h1>
-
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="contact-intro">
-            <h1>Contact Us</h1>
-            <p>Have a question or ready to book your next adventure? Reach out to us through any of the methods below, or send us a message. We're happy to help!</p>
-        </section>
+        <div class="hero">
+            <img class="hero-image" src="images/hero-image.jpg" alt="Whitewater Rafting">
+            <h1 class="hero-heading">Whitewater Rafting Adventures</h1>
+        </div>
 
-        <section class="contact-details">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
-            <p>Phone: 123-456-7890</p>
-            <p>Our office is located at: 334 Whitewater Rd, Bella Vista, Argentina</p>
-        </section>
-
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="/submit_form" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <fieldset>
-                    <legend>Purpose of your Message:</legend>
-                    <label for="general-inquiry">
-                        <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
-                        General Inquiry
-                    </label><br>
-                    <label for="reservation-question">
-                        <input type="radio" id="reservation-question" name="purpose" value="Reservation Question" required>
-                        Reservation Question
-                    </label><br>
-                    <label for="website-suggestion">
-                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion" required>
-                        Website Suggestion
-                    </label><br>
-                </fieldset>
-                
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label><br>
-                
-                <button type="submit">Send Message</button>
+        <section class="newsletter">
+            <h2>Join Our Adventure Newsletter</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Sign Up</button>
             </form>
         </section>
 
-        <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
-            <div class="employee">
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <p class="caption">Robert Thompson - Customer Support</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <p class="caption">John Smith - Operations Manager</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p class="caption">Emily Brown - Adventure Guide</p>
-            </div>
-        </section>
+        <div class="cta-container">
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </div>
 
-        <section>
-            <div class='Map'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4168.762818018183!2d-59.060108296479605!3d-28.524891237717732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1738983252505!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="images/adventure1.jpg" alt="Exciting Rafting">
+                <h3>Thrilling Rapids</h3>
+                <p>Feel the rush as you navigate some of the most exciting rapids in the world!</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/adventure2.jpg" alt="Guided Tours">
+                <h3>Expert Guides</h3>
+                <p>Our experienced guides ensure a safe and thrilling adventure for all skill levels.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/adventure3.jpg" alt="Breathtaking Views">
+                <h3>Breathtaking Views</h3>
+                <p>Experience nature’s beauty with panoramic views during your rafting adventure.</p>
             </div>
         </section>
+        
     </main>
 
     <footer>
@@ -117,8 +80,6 @@
                 <img src="images/instagram.svg" alt="Instagram">
             </a>
         </nav>
-
-        <p><a href="https://app.moqups.com/mRnjVSnXFUHRv0hgL8hJDIEzBwyHyiwr/view/page/ad64222d5" target="_blank">View Contact Us Page Wireframe</a></p>
     </footer>
 </body>
 </html>
