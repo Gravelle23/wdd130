@@ -335,5 +335,55 @@ a:hover {
     border-radius: 8px;
 }
 
+.trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.trip {
+    width: 30%;
+    margin: 10px;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Table styles */
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cta {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta a {
+    font-weight: bold;
+    color: #ff6347;
+}
+
     
     
