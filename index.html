@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aaron Gravelle | WDD 130 Web Development</title>
-        <meta name="description" content="Personal webpage for Aaron Gravelle, a WDD 130 student showcasing web development projects and information about his interests.">
-        <meta name="author" content="Aaron Gravelle">
-        <meta name="keywords" content="Aaron Gravelle, WDD 130, web development, coding, telecommunications, USA">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Adventures</title>
+    <meta name="description" content="Explore exciting white water rafting trips with WWR Rafting Adventures. Join us for thrilling outdoor experiences.">
+    <meta name="author" content="WWR Rafting Team">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
 <body>
     <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="wwr/">Rafting Site</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
-    </header>  
+    </header>
+
     <main>
-        <h1>Aaron Gravelle | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Portrait of Aaron Gravelle" width="200">
-        <img src="images/second-image.jpg" alt="Another image" width="200">
-        <p>Hello! My name is Aaron Gravelle, and I am from the USA. I enjoy going to the gym and spending time with friends and family.
-        I currently work for a telecommunications company. I have always been interested in coding and really 
-        anything involving computers. I am very excited to learn more and grow!</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="White Water Rafting Adventure" class="hero-image">
+            <div class="hero-text">
+                <h1>Experience the Thrill of White Water Rafting</h1>
+                <p>Join us for the adventure of a lifetime!</p>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter">
+            <h2>Sign Up for Exciting Updates</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Check out our amazing rafting trips and plan your journey today!</p>
+            <a href="trips.html" class="cta-button">See Our Trips</a>
+        </section>
+
+        <!-- Grid Layout for Images and Content -->
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="images/rafting-trip.jpg" alt="Exciting Rafting Trip">
+                <h3>Rafting Adventures</h3>
+                <p>Our rafting trips offer an adrenaline-packed journey through scenic rivers. Choose your adventure!</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/rafting-guide.jpg" alt="Rafting Guide">
+                <h3>Meet Our Guides</h3>
+                <p>Our expert rafting guides ensure your safety and excitement. Trust us to lead you on an unforgettable experience.</p>
+            </div>
+        </section>
     </main>
-    <aside>
-        <h2>USA</h2>
-        <ul>
-            <li><a href="https://www.google.com/maps/place/United+States/data=!4m2!3m1!1s0x54eab584e432360b:0x1c3bb99243deb742?sa=X&ved=1t:242&ictx=111">Related Resource 1</a></li>
-        </ul>
-    </aside>
+
     <footer>
-        <p>© 2025 | Aaron Gravelle | USA</p>
+        <p>© 2025 WWR Rafting Adventures | All Rights Reserved</p>
     </footer>
 </body>
+
 </html>
