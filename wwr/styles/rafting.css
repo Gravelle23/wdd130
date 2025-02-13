@@ -25,22 +25,22 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Spaces out the logo, title, and nav */
-    align-items: center; /* Vertically aligns the items */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 10px 20px;
     background-color: var(--secondary-color);
 }
 
 header .logo {
-    margin-right: 20px; /* Adds space between the logo and title */
+    margin-right: 20px; 
 }
 
 header h1 {
-    flex: 1; /* Makes the title take the remaining space */
-    text-align: center; /* Centers the title */
-    font-size: 2em; /* Adjust the size of the title */
+    flex: 1; 
+    text-align: center; 
+    font-size: 2em; 
     color: var(--accent1-color);
-    margin: 0; /* Removes any default margin */
+    margin: 0; 
 }
 
 header .logo img {
@@ -98,53 +98,17 @@ nav a:hover {
     z-index: 1;
 }
 
-.testimonial-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
 
-.testimonial {
-    width: 80%;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.2em;
-    line-height: 1.6;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.happy-client {
+.hero-text {
     position: absolute;
     top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.happy-client img {
-    max-height: 150px;
-    border-radius: 50%;
-}
-
-.testimonial p {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.6;
-    max-width: 80%;
 }
 
 .hero-heading {
@@ -161,27 +125,90 @@ nav a:hover {
     white-space: nowrap;
 }
 
-.hero article {
-    position: relative;
-    z-index: 0;
-    padding: 20px;
-    max-width: 90%;
-    margin: 20px auto;
-    text-align: left;
+
+.newsletter {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-.hero article img {
-    width: 150px;
+.newsletter input,
+.newsletter button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.newsletter input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+}
+
+
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: var(--accent2-color);
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
     height: auto;
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
+    border-radius: 8px;
 }
 
-.hero article p {
-    font-size: 1.1em;
+.grid-item h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: var(--accent2-color);
+}
+
+.grid-item p {
+    font-size: 1em;
     line-height: 1.6;
 }
+
 
 .history, .adventure {
     padding: 40px 20px;
@@ -250,17 +277,17 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta h2 {
+        font-size: 2em;
+    }
+
     .hero-heading {
         font-size: 2em;
         top: 5%;
-    }
-
-    .hero article {
-        margin-top: 60vh;
-    }
-
-    .adventure-images {
-        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -337,7 +364,7 @@ a:hover {
 
 .trip-info-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     margin: 20px 0;
 }
@@ -388,5 +415,3 @@ th {
 .cta-button:hover {
     background-color: #0056b3;
 }
-    
-    
