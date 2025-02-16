@@ -99,6 +99,7 @@ nav a:hover {
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: 2;
 }
 
 .testimonial-container {
